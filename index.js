@@ -25,9 +25,6 @@ app.get('/courses/:id', (req, res) => {
     res.send(selectCourse);
 })
 
-
-
-
 app.listen(port, () => {
     console.log('Server is running', port)
 })
