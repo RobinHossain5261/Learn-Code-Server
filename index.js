@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.send('Now server is running')
 })
 
+app.get('/allCourses', (req, res) => {
+    res.send('All courses are running')
+})
+
 
 app.listen(port, () => {
     console.log('server is running', port);
