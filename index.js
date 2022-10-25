@@ -6,7 +6,6 @@ app.use(cors());
 const port = process.env.port || 5000;
 
 const courses = require('./data/courses.json');
-const category = require('./data/category.json');
 
 app.get('/', (req, res) => {
     res.send('Now server is running');
@@ -22,6 +21,7 @@ app.get('/courses/:id', (req, res) => {
     if (!selectCourse) {
         res.send('Course is not found');
     }
+
     res.send(selectCourse);
 })
 
